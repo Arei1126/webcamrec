@@ -2,7 +2,6 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('webcam-recorder-cache').then(cache => {
             return cache.addAll([
-                '/',
                 '/.index.html',
                 '/.script.js',
                 '/.manifest.json',
